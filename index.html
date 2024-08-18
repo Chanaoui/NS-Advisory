@@ -486,7 +486,7 @@
                 </a>
               </li>
 
-              <li>
+              <!-- <li>
                 <a
                   href="https://www.instagram.com/"
                   class="social-link"
@@ -494,7 +494,7 @@
                 >
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
-              </li>
+              </li> -->
 
               <li>
                 <a
@@ -618,7 +618,7 @@
                 <a
                   href="mailto:salessupport@nsadvisoring.com"
                   class="footer-item-link"
-                  >salessupport@nsadvisoring.com</a
+                  >info@nsadvisory.net</a
                 >
               </div>
             </li>
@@ -671,5 +671,48 @@
     <script>
       AOS.init();
     </script>
-  </body>
+  
+<!-- The Popup Form -->
+<div id="demoFormPopup" class="popup-form">
+  <div class="popup-form-content">
+    <span class="close-btn">&times;</span>
+    <h2>Request a Demo</h2>
+    <form action="https://formsubmit.co/info@nsadvisory.net" method="post">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Adding JS to handle the popup -->
+<script>
+  var popup = document.getElementById('demoFormPopup');
+  var btn = document.querySelector('.btn'); 
+  var span = document.getElementsByClassName('close-btn')[0];
+
+  btn.onclick = function(event) {
+    event.preventDefault();
+    popup.style.display = 'block';
+  }
+
+  span.onclick = function() {
+    popup.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
 </html>
