@@ -990,6 +990,7 @@ form button {
     align-items: center;
     gap: 5px;
     margin-inline-start: auto;
+    padding: 5px;
   }
 
   /**
