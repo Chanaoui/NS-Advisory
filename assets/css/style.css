@@ -967,7 +967,7 @@ form button {
  * responsive for larger than 550px screen
  */
 
-@media (min-width: 400px) {
+@media (min-width: 460px) {
   /**
    * REUSED STYLE
    */
@@ -990,7 +990,7 @@ form button {
     align-items: center;
     gap: 5px;
     margin-inline-start: auto;
-    padding: 5px;
+    /* padding: 5px 15px; */
   }
 
   /**
