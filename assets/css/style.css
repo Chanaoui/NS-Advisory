@@ -875,7 +875,7 @@ body {
 
 .popup-form-content {
   background-color: #fff;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -967,7 +967,7 @@ form button {
  * responsive for larger than 550px screen
  */
 
-@media (min-width: 550px) {
+@media (min-width: 500px) {
   /**
    * REUSED STYLE
    */
