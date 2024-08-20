@@ -967,7 +967,7 @@ form button {
  * responsive for larger than 550px screen
  */
 
-@media (min-width: 400px) {
+@media (min-width: 340px) {
   /**
    * REUSED STYLE
    */
